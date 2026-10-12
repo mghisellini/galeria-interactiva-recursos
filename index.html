@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Contacto Empresarial</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+<header>
+    <h1>Formulario de Contacto Empresarial</h1>
+    <p>Comunícate con nuestra empresa de forma rápida y segura.</p>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+    </ul>
+</nav>
+
+<main>
+
+<section id="inicio">
+    <h2>Bienvenido</h2>
+    <p>Esta página permite a los clientes enviar consultas, solicitudes o comentarios a nuestra empresa mediante un formulario de contacto.</p>
+</section>
+
+<section id="servicios">
+    <h2>Nuestros Servicios</h2>
+    <ul>
+        <li>Atención al cliente</li>
+        <li>Soporte técnico</li>
+        <li>Asesoría empresarial</li>
+        <li>Información de productos</li>
+    </ul>
+</section>
+
+<section id="contacto">
+    <h2>Formulario de Contacto</h2>
+
+<form action="formulario.html" onsubmit="return validarFormulario();">
+
+        <label>Nombre:</label><br>
+        <input type="text" id="nombre"><br><br>
+
+        <label>Correo electrónico:</label><br>
+        <input type="email" id="correo"><br><br>
+
+        <label>Empresa:</label><br>
+        <input type="text" id="empresa"><br><br>
+
+        <label>Asunto:</label><br>
+        <input type="text" id="asunto"><br><br>
+
+        <label>Mensaje:</label><br>
+        <textarea id="mensaje" rows="5"></textarea><br><br>
+
+        <button type="submit">Enviar</button>
+
+    </form>
+
+<button type="button" onclick="mostrarServicios()">
+    Ver servicios disponibles
+</button>
+
+<p id="resultado"></p>
+
+</section>
+
+<section id="objetos">
+    <h2>Información Registrada</h2>
+
+    <button onclick="mostrarDatos()">Mostrar ejemplo</button>
+
+    <div id="resultadoDatos"></div>
+</section>
+
+<section id="applets">
+    <h2>Applets de Java</h2>
+
+    <p>
+        Anteriormente, los Applets de Java se utilizaban para crear aplicaciones
+        interactivas dentro de una página web, como formularios y sistemas de
+        contacto empresarial.
+    </p>
+
+    <p>
+        Actualmente, estas funciones se realizan con HTML5, CSS y JavaScript,
+        ofreciendo mayor compatibilidad, seguridad y velocidad.
+    </p>
+
+    <button onclick="mostrarMensajeApplet()">
+        Ver ejemplo moderno
+    </button>
+
+    <p id="mensajeApplet"></p>
+</section>
+
+</main>
+
+<footer>
+    <p>Melanni Ghisellini Robles - Unidad 6 JavaScript</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
